@@ -1,0 +1,30 @@
+influxdb:
+  image: influxdb:0.13
+  ports:
+    - "8083:8083"
+    - "8086:8086"
+  expose:
+    - "8083"
+    - "8086"
+  environment:
+    - INFLUXDB_GRAPHITE_ENABLED=true
+  volumes:
+    - ./data/influxdb:/var/lib/influxdb
+
+chronograf:
+  image: chronograf:0.13
+  ports:
+    - "10000:10000"
+  expose:
+    - "10000"
+  volumes:
+    - ./data/chronograf:/var/lib/chronograf
+
+grafana:
+  image: "grafana/grafana"
+  ports:
+    - "3000:3000"
+  expose:
+    - "3000"
+  volumes:
+    - ./data/grafana:/var/lib/grafana
