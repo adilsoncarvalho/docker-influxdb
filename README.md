@@ -61,9 +61,9 @@ We define the load that you'll be placing on InfluxDB by the number of writes pe
 * RAM: 32+ GB  
 * IOPS: 1000+  
 
-Source: [InfluxDB docs][https://docs.influxdata.com/influxdb/v0.13/guides/hardware_sizing/#general-hardware-guidelines-for-a-single-node]
+Source: [InfluxDB docs](https://docs.influxdata.com/influxdb/v0.13/guides/hardware_sizing/#general-hardware-guidelines-for-a-single-node)
 
 ## Resources
 
-- [InfluxDB Documentation][https://hub.docker.com/_/influxdb/]
+- [InfluxDB Documentation](https://hub.docker.com/_/influxdb/)
 
