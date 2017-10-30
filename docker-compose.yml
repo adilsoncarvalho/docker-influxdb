@@ -19,8 +19,6 @@ services:
       - "8888:8888"
     expose:
       - "8888"
-    environment:
-      - INFLUXDB_URL=
     volumes:
       - ./data/chronograf:/var/lib/chronograf
 
